@@ -27,6 +27,16 @@ public class Program
   private static async Task MainAsync(string[] args)
   {
   }
+
+  private static void CreateAzureSearchIndex()
+  {
+    var searchIndex = new SearchIndex(indexName)
+    {
+      Fields = new FieldBuilder().Build(typeof(RouteInfo))
+    };
+
+    var index = indexClient.CreateOrUpdateIndex(searchIndex).Value;
+  }
 }
 
 public class RouteInfo
