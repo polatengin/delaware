@@ -26,6 +26,11 @@ public class Program
 
   private static async Task MainAsync(string[] args)
   {
+    CreateAzureSearchIndex();
+
+    FillAzureSearchIndexWithData();
+
+    await SendSearchRequest("france-");
   }
 
   private static void CreateAzureSearchIndex()
