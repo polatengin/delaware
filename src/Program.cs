@@ -37,6 +37,26 @@ public class Program
 
     var index = indexClient.CreateOrUpdateIndex(searchIndex).Value;
   }
+
+  private static void FillAzureSearchIndexWithData()
+  {
+    var json = File.ReadAllText("data.json");
+    var travelInfos = JsonSerializer.Deserialize<RouteInfo[]>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+    if (travelInfos == null)
+    {
+      return;
+    }
+
+    var actions = new List<IndexDocumentsAction<RouteInfo>>();
+
+    foreach (var travelInfo in travelInfos)
+    {
+      actions.Add(IndexDocumentsAction.Upload(travelInfo));
+    }
+
+    searchClient.IndexDocuments(IndexDocumentsBatch.Create(actions.ToArray()), new IndexDocumentsOptions { ThrowOnAnyError = true });
+  }
 }
 
 public class RouteInfo
