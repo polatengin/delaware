@@ -57,6 +57,16 @@ public class Program
 
     searchClient.IndexDocuments(IndexDocumentsBatch.Create(actions.ToArray()), new IndexDocumentsOptions { ThrowOnAnyError = true });
   }
+
+  private static async Task<SearchResults<RouteInfo>> SendSearchRequest(string text)
+  {
+    var result = await searchClient.SearchAsync<RouteInfo>($"{text.Replace("-", "")}*");
+    result.Value.GetResults().ToList().ForEach(x =>
+    {
+      Console.WriteLine(x.Document.Name);
+    });
+    return result.Value;
+  }
 }
 
 public class RouteInfo
