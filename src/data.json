@@ -1,0 +1,567 @@
+[
+  {
+    "@search.score": 1,
+    "id": "2",
+    "carrierId": "1",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 5,
+    "name": "Kocaeli-Germany",
+    "departureCountry": "Germany",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Siirt"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Izmir"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "5",
+        "vehicleId": "2",
+        "vehicleTypeId": "1",
+        "baggageTypeId": "2",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 54,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 99
+      },
+      {
+        "priceId": "6",
+        "vehicleId": "3",
+        "vehicleTypeId": "1",
+        "baggageTypeId": "2",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 33,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 12
+      },
+      {
+        "priceId": "7",
+        "vehicleId": "4",
+        "vehicleTypeId": "3",
+        "baggageTypeId": "2",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 54,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 99
+      },
+      {
+        "priceId": "8",
+        "vehicleId": "5",
+        "vehicleTypeId": "3",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 33,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 12
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "7",
+    "carrierId": "16",
+    "carrierCompanyTitle": "deneme",
+    "carrierReviewRate": 0,
+    "name": "Ankara-Sweden",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Sweden",
+    "departureCityList": [
+      {
+        "name": "Ankara"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Dalarna"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "19",
+        "vehicleId": "13",
+        "vehicleTypeId": "4",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 30,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 30
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "8",
+    "carrierId": "16",
+    "carrierCompanyTitle": "deneme",
+    "carrierReviewRate": 0,
+    "name": "Ankara-Sweden",
+    "departureCountry": "Sweden",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Dalarna"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Denizli"
+      },
+      {
+        "name": "Istanbul"
+      },
+      {
+        "name": "Izmir"
+      },
+      {
+        "name": "Ankara"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "21",
+        "vehicleId": "13",
+        "vehicleTypeId": "4",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 21,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 24
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "10",
+    "carrierId": "16",
+    "carrierCompanyTitle": "deneme",
+    "carrierReviewRate": 0,
+    "name": "dfsdfsd",
+    "departureCountry": "Germany",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Berlin"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Izmir"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "20",
+        "vehicleId": "13",
+        "vehicleTypeId": "4",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 33,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 36
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "11",
+    "carrierId": "12",
+    "carrierCompanyTitle": "Another Sample Company",
+    "carrierReviewRate": 0,
+    "name": "Sample Route",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Izmir"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Istanbul"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "25",
+        "vehicleId": "9",
+        "vehicleTypeId": "1",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 10,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 1
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "13",
+    "carrierId": "12",
+    "carrierCompanyTitle": "Another Sample Company",
+    "carrierReviewRate": 0,
+    "name": "Sample Route",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Poland",
+    "departureCityList": [
+      {
+        "name": "Bursa"
+      },
+      {
+        "name": "Izmir"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Częstochowa"
+      },
+      {
+        "name": "Zegrze"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "14",
+    "carrierId": "12",
+    "carrierCompanyTitle": "Another Sample Company",
+    "carrierReviewRate": 0,
+    "name": "Sample Route",
+    "departureCountry": "Poland",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Częstochowa"
+      },
+      {
+        "name": "Zegrze"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Bursa"
+      },
+      {
+        "name": "Izmir"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "15",
+    "carrierId": "1",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 5,
+    "name": "Ege-Germany",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Germany",
+    "departureCityList": [
+      {
+        "name": "Manisa"
+      },
+      {
+        "name": "Izmir"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Bonn"
+      },
+      {
+        "name": "Köln"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "16",
+    "carrierId": "1",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 5,
+    "name": "Ege-Germany",
+    "departureCountry": "Germany",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Hamburg"
+      },
+      {
+        "name": "Frankfurt"
+      },
+      {
+        "name": "Düsseldorf"
+      },
+      {
+        "name": "Bonn"
+      },
+      {
+        "name": "Köln"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Manisa"
+      },
+      {
+        "name": "Izmir"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "17",
+    "carrierId": "1",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 5,
+    "name": "Karadeniz-France",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "France",
+    "departureCityList": [
+      {
+        "name": "Düzce"
+      },
+      {
+        "name": "Zonguldak"
+      },
+      {
+        "name": "Bartin"
+      },
+      {
+        "name": "Sivas"
+      },
+      {
+        "name": "Trabzon"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Marsilya"
+      },
+      {
+        "name": "Lyon"
+      },
+      {
+        "name": "Paris"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "18",
+    "carrierId": "1",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 5,
+    "name": "Karadeniz-France",
+    "departureCountry": "France",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Marsilya"
+      },
+      {
+        "name": "Lyon"
+      },
+      {
+        "name": "Paris"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Duzce"
+      },
+      {
+        "name": "Zonguldak"
+      },
+      {
+        "name": "Bartin"
+      },
+      {
+        "name": "Sivas"
+      },
+      {
+        "name": "Trabzon"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "19",
+    "carrierId": "1",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 5,
+    "name": "Turkey-France",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "France",
+    "departureCityList": [
+      {
+        "name": "Ankara"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Paris"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "20",
+    "carrierId": "1",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 5,
+    "name": "France-Turkey",
+    "departureCountry": "France",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Lyon"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Adana"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "21",
+    "carrierId": "1",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 5,
+    "name": "Asya-Avrupa",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "France",
+    "departureCityList": [
+      {
+        "name": "Eskisehir"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Marsilya"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "22",
+    "carrierId": "15",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 0,
+    "name": "Sample Route",
+    "departureCountry": "Germany",
+    "arrivalCountry": "Spain",
+    "departureCityList": [
+      {
+        "name": "Dortmund"
+      },
+      {
+        "name": "Mitte"
+      },
+      {
+        "name": "Berlin"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Valensiya"
+      },
+      {
+        "name": "Madrid"
+      },
+      {
+        "name": "Barselona"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "23",
+    "carrierId": "15",
+    "carrierCompanyTitle": "Sample Company",
+    "carrierReviewRate": 0,
+    "name": "Sample Route",
+    "departureCountry": "Spain",
+    "arrivalCountry": "Germany",
+    "departureCityList": [
+      {
+        "name": "Vigo"
+      },
+      {
+        "name": "Valensiya"
+      },
+      {
+        "name": "Madrid"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Dortmund"
+      },
+      {
+        "name": "Mitte"
+      },
+      {
+        "name": "Berlin"
+      }
+    ],
+    "vehicleList": []
+  },
+  {
+    "@search.score": 1,
+    "id": "12",
+    "carrierId": "17",
+    "carrierCompanyTitle": "Another Sample Company",
+    "carrierReviewRate": 0,
+    "name": "Sample Route",
+    "departureCountry": "United States of America",
+    "arrivalCountry": "Canada",
+    "departureCityList": [
+      {
+        "name": "New Orleans"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Surrey"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "29",
+        "vehicleId": "14",
+        "vehicleTypeId": "1",
+        "baggageTypeId": "2",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 3213,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 3213
+      },
+      {
+        "priceId": "30",
+        "vehicleId": "15",
+        "vehicleTypeId": "2",
+        "baggageTypeId": "4",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 3213,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 321
+      }
+    ]
+  }
+]
