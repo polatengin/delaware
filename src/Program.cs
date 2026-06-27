@@ -16,20 +16,15 @@ public class Program
   static SearchIndexClient indexClient = new SearchIndexClient(endpoint, credential);
   static SearchClient searchClient = new SearchClient(endpoint, indexName, credential);
 
-  public static void Main(string[] args)
+  public static async Task Main(string[] args)
   {
-    MainAsync(args).GetAwaiter().GetResult();
+    await CreateAzureSearchIndex();
 
-    Console.WriteLine("done!...");
-  }
-
-  private static async Task MainAsync(string[] args)
-  {
-    CreateAzureSearchIndex();
-
-    FillAzureSearchIndexWithData();
+    await FillAzureSearchIndexWithData();
 
     await SendSearchRequest("france-");
+
+    Console.WriteLine("done!...");
   }
 
   private static string GetRequiredEnvironmentVariable(string name)
@@ -44,19 +39,19 @@ public class Program
     return value;
   }
 
-  private static void CreateAzureSearchIndex()
+  private static async Task CreateAzureSearchIndex()
   {
     var searchIndex = new SearchIndex(indexName)
     {
       Fields = new FieldBuilder().Build(typeof(RouteInfo))
     };
 
-    var index = indexClient.CreateOrUpdateIndex(searchIndex).Value;
+    await indexClient.CreateOrUpdateIndexAsync(searchIndex);
   }
 
-  private static void FillAzureSearchIndexWithData()
+  private static async Task FillAzureSearchIndexWithData()
   {
-    var json = File.ReadAllText("data.json");
+    var json = await File.ReadAllTextAsync("data.json");
     var travelInfos = JsonSerializer.Deserialize<RouteInfo[]>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
     if (travelInfos == null)
@@ -71,12 +66,18 @@ public class Program
       actions.Add(IndexDocumentsAction.Upload(travelInfo));
     }
 
-    searchClient.IndexDocuments(IndexDocumentsBatch.Create(actions.ToArray()), new IndexDocumentsOptions { ThrowOnAnyError = true });
+    await searchClient.IndexDocumentsAsync(IndexDocumentsBatch.Create(actions.ToArray()), new IndexDocumentsOptions { ThrowOnAnyError = true });
+  }
+
+  private static async Task<string> NormalizeSearchTextAsync(string text)
+  {
+    return text.Replace("-", "");
   }
 
   private static async Task<SearchResults<RouteInfo>> SendSearchRequest(string text)
   {
-    var result = await searchClient.SearchAsync<RouteInfo>($"{text.Replace("-", "")}*");
+    var normalized = await NormalizeSearchTextAsync(text);
+    var result = await searchClient.SearchAsync<RouteInfo>($"{normalized}*");
     result.Value.GetResults().ToList().ForEach(x =>
     {
       Console.WriteLine(x.Document.Name);
