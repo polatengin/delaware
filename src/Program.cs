@@ -25,6 +25,10 @@ public class Program
     await SendSearchRequest("france-");
 
     Console.WriteLine("`france-` search done!...");
+
+    await SendSearchRequest("tur");
+
+    Console.WriteLine("`tur` search done!...");
   }
 
   private static string GetRequiredEnvironmentVariable(string name)
