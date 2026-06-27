@@ -6,6 +6,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 5,
     "name": "Kocaeli-Germany",
+    "description": "Express overland service for mixed freight moving from southern Germany into western Turkey. The route is useful for consolidated parcels, commercial samples, and small vehicle loads that need predictable customs handling.",
     "departureCountry": "Germany",
     "arrivalCountry": "Turkey",
     "departureCityList": [
@@ -68,6 +69,7 @@
     "carrierCompanyTitle": "deneme",
     "carrierReviewRate": 0,
     "name": "Ankara-Sweden",
+    "description": "Northbound scheduled service connecting central Anatolia with Dalarna for shipments that can travel on groupage capacity. It is a practical lane for boxed household goods, seasonal retail stock, and small business consignments.",
     "departureCountry": "Turkey",
     "arrivalCountry": "Sweden",
     "departureCityList": [
@@ -100,6 +102,7 @@
     "carrierCompanyTitle": "deneme",
     "carrierReviewRate": 0,
     "name": "Ankara-Sweden",
+    "description": "Return service from Sweden to Turkey with multiple delivery cities across western and central Turkey. The route is suited for customers who want one pickup point in Dalarna and flexible final-mile distribution.",
     "departureCountry": "Sweden",
     "arrivalCountry": "Turkey",
     "departureCityList": [
@@ -141,6 +144,7 @@
     "carrierCompanyTitle": "deneme",
     "carrierReviewRate": 0,
     "name": "dfsdfsd",
+    "description": "Berlin to Izmir sample lane for testing exact city matching, country facets, and price sorting in Azure Search. It includes both full vehicle and desi pricing so query results can exercise numeric payloads as well as text fields.",
     "departureCountry": "Germany",
     "arrivalCountry": "Turkey",
     "departureCityList": [
@@ -173,6 +177,7 @@
     "carrierCompanyTitle": "Another Sample Company",
     "carrierReviewRate": 0,
     "name": "Sample Route",
+    "description": "Domestic Turkish route between Izmir and Istanbul for lightweight cargo and short-haul marketplace shipments. The compact geography makes it useful for testing filters where departure and arrival countries are the same.",
     "departureCountry": "Turkey",
     "arrivalCountry": "Turkey",
     "departureCityList": [
@@ -205,6 +210,7 @@
     "carrierCompanyTitle": "Another Sample Company",
     "carrierReviewRate": 0,
     "name": "Sample Route",
+    "description": "Outbound Turkey to Poland route that includes both Bursa and Izmir as origin cities. The empty vehicle list intentionally represents a route that is searchable before detailed price offers are published.",
     "departureCountry": "Turkey",
     "arrivalCountry": "Poland",
     "departureCityList": [
@@ -232,6 +238,7 @@
     "carrierCompanyTitle": "Another Sample Company",
     "carrierReviewRate": 0,
     "name": "Sample Route",
+    "description": "Inbound Poland to Turkey route for return cargo from central Poland to western Turkey. It helps validate reverse-lane search behavior with the same city pairs and a different departure country facet.",
     "departureCountry": "Poland",
     "arrivalCountry": "Turkey",
     "departureCityList": [
@@ -259,6 +266,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 5,
     "name": "Ege-Germany",
+    "description": "Aegean export lane from Manisa and Izmir into German commercial centers. The route description includes city names and regional terms so full-text search can match both explicit cities and broader logistics language.",
     "departureCountry": "Turkey",
     "arrivalCountry": "Germany",
     "departureCityList": [
@@ -286,6 +294,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 5,
     "name": "Ege-Germany",
+    "description": "Germany to Aegean return route serving Hamburg, Frankfurt, Dusseldorf, Bonn, and Koln before delivery to Manisa and Izmir. It is useful for testing city list arrays with several origin points in one indexed document.",
     "departureCountry": "Germany",
     "arrivalCountry": "Turkey",
     "departureCityList": [
@@ -322,6 +331,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 5,
     "name": "Karadeniz-France",
+    "description": "Black Sea export lane from northern Turkey to Marseille, Lyon, and Paris. It gives the index longer Turkish city lists and French destinations for testing analyzers, suggestions, and multi-city search results.",
     "departureCountry": "Turkey",
     "arrivalCountry": "France",
     "departureCityList": [
@@ -361,6 +371,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 5,
     "name": "Karadeniz-France",
+    "description": "France to Black Sea return lane designed for inbound commercial cargo and personal effects. The document includes alternate spelling for Duzce to make analyzer behavior easier to observe during search testing.",
     "departureCountry": "France",
     "arrivalCountry": "Turkey",
     "departureCityList": [
@@ -400,6 +411,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 5,
     "name": "Turkey-France",
+    "description": "Direct Ankara to Paris route for clean test cases with one origin city and one destination city. It is intentionally simple so search scoring can be compared against broader multi-city routes.",
     "departureCountry": "Turkey",
     "arrivalCountry": "France",
     "departureCityList": [
@@ -421,6 +433,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 5,
     "name": "France-Turkey",
+    "description": "Lyon to Adana service for inbound freight from France to southern Turkey. This single-pair route is helpful when validating prefix queries, route name matching, and country filters together.",
     "departureCountry": "France",
     "arrivalCountry": "Turkey",
     "departureCityList": [
@@ -442,6 +455,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 5,
     "name": "Asya-Avrupa",
+    "description": "Eskisehir to Marseille route representing a broader Asia to Europe naming pattern. The text gives the index natural-language terms like cross-border, scheduled, and export for more realistic search examples.",
     "departureCountry": "Turkey",
     "arrivalCountry": "France",
     "departureCityList": [
@@ -463,6 +477,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 0,
     "name": "Sample Route",
+    "description": "Germany to Spain route covering Dortmund, Mitte, and Berlin on the departure side. It is a good document for faceted search demos because the destination list includes Madrid, Barcelona, and Valencia-style spelling.",
     "departureCountry": "Germany",
     "arrivalCountry": "Spain",
     "departureCityList": [
@@ -496,6 +511,7 @@
     "carrierCompanyTitle": "Sample Company",
     "carrierReviewRate": 0,
     "name": "Sample Route",
+    "description": "Spain to Germany return route from Vigo, Valencia, and Madrid into Dortmund, Mitte, and Berlin. It balances the Germany to Spain document so route direction can be tested independently from carrier data.",
     "departureCountry": "Spain",
     "arrivalCountry": "Germany",
     "departureCityList": [
@@ -529,6 +545,7 @@
     "carrierCompanyTitle": "Another Sample Company",
     "carrierReviewRate": 0,
     "name": "Sample Route",
+    "description": "North American lane from New Orleans to Surrey for long-distance sample indexing outside Europe. It adds different geography and higher price values so sorting and filtering have a wider range to work with.",
     "departureCountry": "United States of America",
     "arrivalCountry": "Canada",
     "departureCityList": [
@@ -561,6 +578,484 @@
         "priceForEntireVehicle": 3213,
         "currencyForOneDesi": 1,
         "priceForOneDesi": 321
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "24",
+    "carrierId": "18",
+    "carrierCompanyTitle": "Mediterranean Freight",
+    "carrierReviewRate": 4.6,
+    "name": "Italy-Turkey Express",
+    "description": "Scheduled freight service from northern Italy to Istanbul and Bursa with a focus on textile, machinery, and boxed retail shipments. The route adds Italian cities and Mediterranean trade terms to make full-text search examples more varied.",
+    "departureCountry": "Italy",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Milan"
+      },
+      {
+        "name": "Turin"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Istanbul"
+      },
+      {
+        "name": "Bursa"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "31",
+        "vehicleId": "16",
+        "vehicleTypeId": "2",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 840,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 18
+      },
+      {
+        "priceId": "32",
+        "vehicleId": "17",
+        "vehicleTypeId": "4",
+        "baggageTypeId": "2",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 1260,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 22
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "25",
+    "carrierId": "18",
+    "carrierCompanyTitle": "Mediterranean Freight",
+    "carrierReviewRate": 4.6,
+    "name": "Turkey-Italy Express",
+    "description": "Return service from Istanbul and Bursa to Milan and Rome for export cargo moving into Italy. It supports route search scenarios where the carrier is the same but the direction and destination country change.",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Italy",
+    "departureCityList": [
+      {
+        "name": "Istanbul"
+      },
+      {
+        "name": "Bursa"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Milan"
+      },
+      {
+        "name": "Rome"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "33",
+        "vehicleId": "16",
+        "vehicleTypeId": "2",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 870,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 19
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "26",
+    "carrierId": "19",
+    "carrierCompanyTitle": "EuroBridge Logistics",
+    "carrierReviewRate": 4.2,
+    "name": "Netherlands-Turkey Groupage",
+    "description": "Groupage lane from Amsterdam and Rotterdam to Ankara and Konya with regular consolidation windows. It is a useful sample for search queries involving ports, inland delivery, and multi-stop Turkish destinations.",
+    "departureCountry": "Netherlands",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Amsterdam"
+      },
+      {
+        "name": "Rotterdam"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Ankara"
+      },
+      {
+        "name": "Konya"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "34",
+        "vehicleId": "18",
+        "vehicleTypeId": "3",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 990,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 16
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "27",
+    "carrierId": "19",
+    "carrierCompanyTitle": "EuroBridge Logistics",
+    "carrierReviewRate": 4.2,
+    "name": "Turkey-Netherlands Groupage",
+    "description": "Outbound Aegean service from Izmir and Aydin to Rotterdam and Utrecht. The description includes export, consolidation, and depot language to improve testing for natural search phrases.",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Netherlands",
+    "departureCityList": [
+      {
+        "name": "Izmir"
+      },
+      {
+        "name": "Aydin"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Rotterdam"
+      },
+      {
+        "name": "Utrecht"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "35",
+        "vehicleId": "18",
+        "vehicleTypeId": "3",
+        "baggageTypeId": "4",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 1025,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 17
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "28",
+    "carrierId": "20",
+    "carrierCompanyTitle": "Lowlands Carrier",
+    "carrierReviewRate": 3.9,
+    "name": "Belgium-France Local",
+    "description": "Short international route from Brussels and Antwerp to Paris and Lyon for regional shipments. It broadens the data set with neighboring countries and compact routes that should score differently than long-distance lanes.",
+    "departureCountry": "Belgium",
+    "arrivalCountry": "France",
+    "departureCityList": [
+      {
+        "name": "Brussels"
+      },
+      {
+        "name": "Antwerp"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Paris"
+      },
+      {
+        "name": "Lyon"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "36",
+        "vehicleId": "19",
+        "vehicleTypeId": "1",
+        "baggageTypeId": "2",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 410,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 9
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "29",
+    "carrierId": "20",
+    "carrierCompanyTitle": "Lowlands Carrier",
+    "carrierReviewRate": 3.9,
+    "name": "France-Belgium Local",
+    "description": "Return lane from Paris and Lille to Brussels and Gent for smaller commercial loads. The route helps validate queries that use French and Belgian city names together with short-haul route descriptions.",
+    "departureCountry": "France",
+    "arrivalCountry": "Belgium",
+    "departureCityList": [
+      {
+        "name": "Paris"
+      },
+      {
+        "name": "Lille"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Brussels"
+      },
+      {
+        "name": "Gent"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "37",
+        "vehicleId": "19",
+        "vehicleTypeId": "1",
+        "baggageTypeId": "2",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 395,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 8
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "30",
+    "carrierId": "21",
+    "carrierCompanyTitle": "Danube Transport",
+    "carrierReviewRate": 4.4,
+    "name": "Austria-Hungary Danube",
+    "description": "Danube corridor service from Vienna and Graz to Budapest and Debrecen. It adds central European geography and river-corridor wording for more realistic search text.",
+    "departureCountry": "Austria",
+    "arrivalCountry": "Hungary",
+    "departureCityList": [
+      {
+        "name": "Vienna"
+      },
+      {
+        "name": "Graz"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Budapest"
+      },
+      {
+        "name": "Debrecen"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "38",
+        "vehicleId": "20",
+        "vehicleTypeId": "2",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 520,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 11
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "31",
+    "carrierId": "21",
+    "carrierCompanyTitle": "Danube Transport",
+    "carrierReviewRate": 4.4,
+    "name": "Hungary-Austria Danube",
+    "description": "Reverse Danube route from Budapest and Szeged to Vienna and Linz. It is designed for index tests where nearby countries share a carrier, similar route name, and different city arrays.",
+    "departureCountry": "Hungary",
+    "arrivalCountry": "Austria",
+    "departureCityList": [
+      {
+        "name": "Budapest"
+      },
+      {
+        "name": "Szeged"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Vienna"
+      },
+      {
+        "name": "Linz"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "39",
+        "vehicleId": "20",
+        "vehicleTypeId": "2",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 540,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 12
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "32",
+    "carrierId": "22",
+    "carrierCompanyTitle": "Island Connect",
+    "carrierReviewRate": 4.1,
+    "name": "United Kingdom-Ireland Ferry",
+    "description": "Ferry-supported service from London and Manchester to Dublin and Cork for parcels, pallets, and personal cargo. It adds island logistics wording to the index so searches for ferry or port service can return useful samples.",
+    "departureCountry": "United Kingdom",
+    "arrivalCountry": "Ireland",
+    "departureCityList": [
+      {
+        "name": "London"
+      },
+      {
+        "name": "Manchester"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Dublin"
+      },
+      {
+        "name": "Cork"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "40",
+        "vehicleId": "21",
+        "vehicleTypeId": "5",
+        "baggageTypeId": "4",
+        "currencyForEntireVehicle": 3,
+        "priceForEntireVehicle": 760,
+        "currencyForOneDesi": 3,
+        "priceForOneDesi": 15
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "33",
+    "carrierId": "22",
+    "carrierCompanyTitle": "Island Connect",
+    "carrierReviewRate": 4.1,
+    "name": "Ireland-United Kingdom Ferry",
+    "description": "Return ferry lane from Dublin and Galway to London and Birmingham with regional pickup scheduling. The route creates additional English-language description text for testing terms like return, ferry, pickup, and delivery.",
+    "departureCountry": "Ireland",
+    "arrivalCountry": "United Kingdom",
+    "departureCityList": [
+      {
+        "name": "Dublin"
+      },
+      {
+        "name": "Galway"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "London"
+      },
+      {
+        "name": "Birmingham"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "41",
+        "vehicleId": "21",
+        "vehicleTypeId": "5",
+        "baggageTypeId": "4",
+        "currencyForEntireVehicle": 3,
+        "priceForEntireVehicle": 780,
+        "currencyForOneDesi": 3,
+        "priceForOneDesi": 16
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "34",
+    "carrierId": "23",
+    "carrierCompanyTitle": "Central Rail Road",
+    "carrierReviewRate": 4.8,
+    "name": "Czechia-Germany Rail",
+    "description": "Rail-compatible cargo route from Prague and Brno to Berlin and Munich. It introduces rail and intermodal language into the index while preserving the same route document shape as road transport examples.",
+    "departureCountry": "Czechia",
+    "arrivalCountry": "Germany",
+    "departureCityList": [
+      {
+        "name": "Prague"
+      },
+      {
+        "name": "Brno"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Berlin"
+      },
+      {
+        "name": "Munich"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "42",
+        "vehicleId": "22",
+        "vehicleTypeId": "4",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 690,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 13
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "35",
+    "carrierId": "23",
+    "carrierCompanyTitle": "Central Rail Road",
+    "carrierReviewRate": 4.8,
+    "name": "Germany-Czechia Rail",
+    "description": "Germany to Czechia service from Munich and Leipzig into Prague and Ostrava. The document is useful for comparing city search results between Berlin, Munich, Prague, and nearby central European routes.",
+    "departureCountry": "Germany",
+    "arrivalCountry": "Czechia",
+    "departureCityList": [
+      {
+        "name": "Munich"
+      },
+      {
+        "name": "Leipzig"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Prague"
+      },
+      {
+        "name": "Ostrava"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "43",
+        "vehicleId": "22",
+        "vehicleTypeId": "4",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 2,
+        "priceForEntireVehicle": 705,
+        "currencyForOneDesi": 2,
+        "priceForOneDesi": 14
       }
     ]
   }
