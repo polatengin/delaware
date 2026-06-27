@@ -2,7 +2,6 @@ SHELL := /bin/bash
 .SHELLFLAGS := -euo pipefail -c
 .ONESHELL:
 
-PROJECT_DIR := src
 PROJECT := delaware.csproj
 STATE_FILE := .delaware.env
 
@@ -20,17 +19,9 @@ REPLICA_COUNT ?= 1
 .PHONY: provision run
 
 provision:
-	az group create \
-		--name "$(RESOURCE_GROUP)" \
-		--location "$(LOCATION)"
+	@az group create --name "$(RESOURCE_GROUP)" --location "$(LOCATION)"
 
-	az search service create \
-		--name "$(SEARCH_SERVICE_NAME)" \
-		--resource-group "$(RESOURCE_GROUP)" \
-		--location "$(LOCATION)" \
-		--sku "$(SEARCH_SKU)" \
-		--partition-count "$(PARTITION_COUNT)" \
-		--replica-count "$(REPLICA_COUNT)"
+	@az search service create --name "$(SEARCH_SERVICE_NAME)" --resource-group "$(RESOURCE_GROUP)" --location "$(LOCATION)" --sku "$(SEARCH_SKU)" --partition-count "$(PARTITION_COUNT)" --replica-count "$(REPLICA_COUNT)"
 
 	cat > "$(STATE_FILE)" <<EOF
 	RESOURCE_GROUP := $(RESOURCE_GROUP)
@@ -42,27 +33,22 @@ provision:
 	REPLICA_COUNT := $(REPLICA_COUNT)
 	EOF
 
-	export DELAWARE_AZURE_RESOURCE_GROUP="$(RESOURCE_GROUP)"
-	export DELAWARE_AZURE_LOCATION="$(LOCATION)"
-	export DELAWARE_AZURE_SEARCH_SERVICE_NAME="$(SEARCH_SERVICE_NAME)"
-	export DELAWARE_AZURE_SEARCH_ENDPOINT="$(SEARCH_ENDPOINT)"
-
-	echo "Search endpoint: $$DELAWARE_AZURE_SEARCH_ENDPOINT"
+	@export DELAWARE_AZURE_RESOURCE_GROUP="$(RESOURCE_GROUP)"
+	@export DELAWARE_AZURE_LOCATION="$(LOCATION)"
+	@export DELAWARE_AZURE_SEARCH_SERVICE_NAME="$(SEARCH_SERVICE_NAME)"
+	@export DELAWARE_AZURE_SEARCH_ENDPOINT="$(SEARCH_ENDPOINT)"
 
 run:
-	[[ -f "$(STATE_FILE)" ]] || { echo "Run 'make provision' first." >&2; exit 1; }
+	@[[ -f "$(STATE_FILE)" ]] || { echo "Run 'make provision' first." >&2; exit 1; }
 
-	SEARCH_ADMIN_KEY=$$(az search admin-key show \
-		--service-name "$(SEARCH_SERVICE_NAME)" \
-		--resource-group "$(RESOURCE_GROUP)" \
-		--query primaryKey \
-		--output tsv)
+	@SEARCH_ADMIN_KEY=$$(az search admin-key show --service-name "$(SEARCH_SERVICE_NAME)" --resource-group "$(RESOURCE_GROUP)" --query primaryKey --output tsv)
 
-	export DELAWARE_AZURE_RESOURCE_GROUP="$(RESOURCE_GROUP)"
-	export DELAWARE_AZURE_LOCATION="$(LOCATION)"
-	export DELAWARE_AZURE_SEARCH_SERVICE_NAME="$(SEARCH_SERVICE_NAME)"
-	export DELAWARE_AZURE_SEARCH_ENDPOINT="$(SEARCH_ENDPOINT)"
-	export DELAWARE_AZURE_SEARCH_ADMIN_KEY="$$SEARCH_ADMIN_KEY"
+	@export DELAWARE_AZURE_RESOURCE_GROUP="$(RESOURCE_GROUP)"
+	@export DELAWARE_AZURE_LOCATION="$(LOCATION)"
+	@export DELAWARE_AZURE_SEARCH_SERVICE_NAME="$(SEARCH_SERVICE_NAME)"
+	@export DELAWARE_AZURE_SEARCH_ENDPOINT="$(SEARCH_ENDPOINT)"
+	@export DELAWARE_AZURE_SEARCH_ADMIN_KEY="$$SEARCH_ADMIN_KEY"
 
-	cd "$(PROJECT_DIR)"
-	dotnet run --project "$(PROJECT)"
+	@pushd ./src
+	@dotnet run
+	@popd
