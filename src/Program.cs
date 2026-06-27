@@ -9,11 +9,10 @@ using Azure.Search.Documents.Models;
 public class Program
 {
   const string indexName = "route";
-  const string key = "<AzureSearchAPIKey>";
 
-  static Uri endpoint = new Uri("https://<azure_search>.search.windows.net");
+  static Uri endpoint = new Uri(GetRequiredEnvironmentVariable("DELAWARE_AZURE_SEARCH_ENDPOINT"));
 
-  static AzureKeyCredential credential = new AzureKeyCredential(key);
+  static AzureKeyCredential credential = new AzureKeyCredential(GetRequiredEnvironmentVariable("DELAWARE_AZURE_SEARCH_ADMIN_KEY"));
   static SearchIndexClient indexClient = new SearchIndexClient(endpoint, credential);
   static SearchClient searchClient = new SearchClient(endpoint, indexName, credential);
 
@@ -31,6 +30,18 @@ public class Program
     FillAzureSearchIndexWithData();
 
     await SendSearchRequest("france-");
+  }
+
+  private static string GetRequiredEnvironmentVariable(string name)
+  {
+    var value = Environment.GetEnvironmentVariable(name);
+
+    if (string.IsNullOrWhiteSpace(value))
+    {
+      throw new InvalidOperationException($"Missing required environment variable: {name}");
+    }
+
+    return value;
   }
 
   private static void CreateAzureSearchIndex()
