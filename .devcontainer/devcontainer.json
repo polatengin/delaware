@@ -1,12 +1,11 @@
 {
   "name": "Ubuntu",
-  "image": "mcr.microsoft.com/devcontainers/base:resolute",
+  "image": "mcr.microsoft.com/dotnet/nightly/sdk:11.0-preview-resolute",
   "features": {
     "ghcr.io/devcontainers/features/azure-cli:1": {},
     "ghcr.io/devcontainers/features/dotnet:2": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/node:2": {},
-    "ghcr.io/devcontainers-extra/features/actions-runner:1": {}
+    "ghcr.io/devcontainers/features/node:2": {}
   },
   "customizations": {
     "vscode": {
