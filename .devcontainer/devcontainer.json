@@ -12,7 +12,8 @@
       "extensions": [
         "ms-dotnettools.vscode-dotnet-runtime",
         "ms-dotnettools.csharp",
-        "ms-dotnettools.csdevkit"
+        "ms-dotnettools.csdevkit",
+        "ms-vscode.makefile-tools"
       ]
     }
   }
