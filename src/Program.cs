@@ -76,15 +76,27 @@ public class Program
 
 public class RouteInfo
 {
-  [SearchableField(IsKey = true, IsFilterable = true, IsSortable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)] public string Id { get; set; } = string.Empty;
-  [SearchableField(IsFilterable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)] public string CarrierId { get; set; } = string.Empty;
-  [SearchableField(IsFilterable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)] public string CarrierCompanyTitle { get; set; } = string.Empty; public double? CarrierReviewRate { get; set; }
-  [SearchableField(IsFilterable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)] public string Name { get; set; } = string.Empty;
-  [SearchableField(IsFilterable = true, IsFacetable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)] public string DepartureCountry { get; set; } = string.Empty;
-  [SearchableField(IsFilterable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)] public string ArrivalCountry { get; set; } = string.Empty;
-  [JsonPropertyName("departureCityList")] public List<DepartureCity> DepartureCityList { get; set; } = new List<DepartureCity>();
-  [JsonPropertyName("arrivalCityList")] public List<ArrivalCity> ArrivalCityList { get; set; } = new List<ArrivalCity>();
-  [JsonPropertyName("vehicleList")] public List<Vehicle> VehicleList { get; set; } = new List<Vehicle>();
+  [SearchableField(IsKey = true, IsFilterable = true, IsSortable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)]
+  public string Id { get; set; } = string.Empty;
+  [SearchableField(IsFilterable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)]
+  public string CarrierId { get; set; } = string.Empty;
+  [SearchableField(IsFilterable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)]
+  public string CarrierCompanyTitle { get; set; } = string.Empty;
+  [SearchableField(IsFilterable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)]
+  public string Name { get; set; } = string.Empty;
+  [SearchableField(AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)]
+  public string Description { get; set; } = string.Empty;
+  [SearchableField(IsFilterable = true, IsFacetable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)]
+  public string DepartureCountry { get; set; } = string.Empty;
+  [SearchableField(IsFilterable = true, AnalyzerName = LexicalAnalyzerName.Values.TrMicrosoft)]
+  public string ArrivalCountry { get; set; } = string.Empty;
+  [JsonPropertyName("departureCityList")]
+  public List<DepartureCity> DepartureCityList { get; set; } = new List<DepartureCity>();
+  [JsonPropertyName("arrivalCityList")]
+  public List<ArrivalCity> ArrivalCityList { get; set; } = new List<ArrivalCity>();
+  [JsonPropertyName("vehicleList")]
+  public List<Vehicle> VehicleList { get; set; } = new List<Vehicle>();
+  public double? CarrierReviewRate { get; set; }
 }
 
 public class DepartureCity
