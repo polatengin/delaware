@@ -1058,5 +1058,262 @@
         "priceForOneDesi": 14
       }
     ]
+  },
+  {
+    "@search.score": 1,
+    "id": "36",
+    "carrierId": "24",
+    "carrierCompanyTitle": "İstanbul Lojistik",
+    "carrierReviewRate": 4.7,
+    "name": "İstanbul-İzmir Hızlı Hat",
+    "description": "İstanbul çıkışlı hızlı şehirlerarası taşıma hattı, İzmir ve Manisa depolarına küçük koliler, tekstil ürünleri ve kırılabilir ticari numuneler taşır. Açıklama metni ı, i, ş, ğ, ö, ç ve ü karakterlerini özellikle içerir.",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "İstanbul"
+      },
+      {
+        "name": "Üsküdar"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "İzmir"
+      },
+      {
+        "name": "Manisa"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "44",
+        "vehicleId": "23",
+        "vehicleTypeId": "2",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 125,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 7
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "37",
+    "carrierId": "24",
+    "carrierCompanyTitle": "İstanbul Lojistik",
+    "carrierReviewRate": 4.7,
+    "name": "İzmir-İstanbul Dönüş",
+    "description": "İzmir ve Aydın çıkışlı dönüş seferi, İstanbul, Gebze ve Çorlu teslimatları için planlanır. Güzergah adları noktalı İ, yumuşak ğ, ç, ş ve ü karakterleriyle arama testlerini çeşitlendirir.",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "İzmir"
+      },
+      {
+        "name": "Aydın"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "İstanbul"
+      },
+      {
+        "name": "Gebze"
+      },
+      {
+        "name": "Çorlu"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "45",
+        "vehicleId": "23",
+        "vehicleTypeId": "2",
+        "baggageTypeId": "4",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 118,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 6
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "38",
+    "carrierId": "25",
+    "carrierCompanyTitle": "Güneydoğu Taşıma",
+    "carrierReviewRate": 4.3,
+    "name": "Iğdır-Şırnak Doğu Hattı",
+    "description": "Iğdır, Ağrı ve Şırnak arasında çalışan bölgesel hat, kış koşullarında küçük hacimli yükleri düzenli çıkışlarla taşır. Metin özellikle dotless ı, ğ, ş ve ç karakterlerinin arama davranışını denemek için hazırlanmıştır.",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Iğdır"
+      },
+      {
+        "name": "Ağrı"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Şırnak"
+      },
+      {
+        "name": "Siirt"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "46",
+        "vehicleId": "24",
+        "vehicleTypeId": "3",
+        "baggageTypeId": "2",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 215,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 10
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "39",
+    "carrierId": "25",
+    "carrierCompanyTitle": "Güneydoğu Taşıma",
+    "carrierReviewRate": 4.3,
+    "name": "Şırnak-Iğdır Dönüş Hattı",
+    "description": "Şırnak çıkışlı dönüş rotası, Iğdır ve Erzincan teslimatlarını aynı belgede gösterir. Türkçe büyük ve küçük harf varyasyonları, özellikle İ ile i ve I ile ı ayrımını gözlemek için kullanılır.",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Şırnak"
+      },
+      {
+        "name": "Siirt"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Iğdır"
+      },
+      {
+        "name": "Erzincan"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "47",
+        "vehicleId": "24",
+        "vehicleTypeId": "3",
+        "baggageTypeId": "2",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 225,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 11
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "40",
+    "carrierId": "26",
+    "carrierCompanyTitle": "Kıyı ve İç Anadolu Nakliyat",
+    "carrierReviewRate": 4.5,
+    "name": "Çanakkale-Muğla Kıyı Rotası",
+    "description": "Çanakkale, Balıkesir ve Muğla kıyı hattı; zeytinyağı, seramik ve yazlık eşya gönderileri için sezonluk kapasite sunar. Kıyı, küçük, öğlen, ürün ve ölçü gibi kelimeler Türkçe karakter kapsamını genişletir.",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Çanakkale"
+      },
+      {
+        "name": "Balıkesir"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Muğla"
+      },
+      {
+        "name": "Kuşadası"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "48",
+        "vehicleId": "25",
+        "vehicleTypeId": "1",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 175,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 8
+      },
+      {
+        "priceId": "49",
+        "vehicleId": "26",
+        "vehicleTypeId": "4",
+        "baggageTypeId": "4",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 260,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 12
+      }
+    ]
+  },
+  {
+    "@search.score": 1,
+    "id": "41",
+    "carrierId": "26",
+    "carrierCompanyTitle": "Kıyı ve İç Anadolu Nakliyat",
+    "carrierReviewRate": 4.5,
+    "name": "Kütahya-Eskişehir İç Hat",
+    "description": "Kütahya, Eskişehir, Afyonkarahisar ve Niğde arasında çalışan iç hat; çini, küçük makine, öğrenci eşyası ve ölçülü paket taşımaları için kullanılır. Bu kayıt ü, ö, ş, ç, ğ, ı ve İ karakterlerini aynı belgede toplar.",
+    "departureCountry": "Turkey",
+    "arrivalCountry": "Turkey",
+    "departureCityList": [
+      {
+        "name": "Kütahya"
+      },
+      {
+        "name": "Eskişehir"
+      }
+    ],
+    "arrivalCityList": [
+      {
+        "name": "Afyonkarahisar"
+      },
+      {
+        "name": "Niğde"
+      }
+    ],
+    "vehicleList": [
+      {
+        "priceId": "50",
+        "vehicleId": "25",
+        "vehicleTypeId": "1",
+        "baggageTypeId": "3",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 145,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 7
+      },
+      {
+        "priceId": "51",
+        "vehicleId": "26",
+        "vehicleTypeId": "4",
+        "baggageTypeId": "4",
+        "currencyForEntireVehicle": 1,
+        "priceForEntireVehicle": 230,
+        "currencyForOneDesi": 1,
+        "priceForOneDesi": 10
+      }
+    ]
   }
 ]
